@@ -1,0 +1,14 @@
+﻿@inject CounterViewModel CounterViewModel
+@*使用 @inject 指示詞 來注入需要用到的 ViewModel 物件*@
+@page "/counterview"
+
+<h3>Counter - Razor 元件 View/ViewModel</h3>
+
+<p>Current count: @CounterViewModel.currentCount</p>
+
+<button class="btn btn-primary" 
+@onclick="CounterViewModel.IncrementCount">Click me</button>
+
+@code {
+
+}
